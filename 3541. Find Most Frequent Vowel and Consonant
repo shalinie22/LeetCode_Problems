@@ -1,0 +1,33 @@
+Example 1:
+
+Input: s = "successes"
+
+Output: 6
+
+Explanation:
+
+The vowels are: 'u' (frequency 1), 'e' (frequency 2). The maximum frequency is 2.
+The consonants are: 's' (frequency 4), 'c' (frequency 2). The maximum frequency is 4.
+The output is 2 + 4 = 6.
+
+
+
+
+class Solution:
+    def maxFreqSum(self, s: str) -> int:
+        Max_count_vowels=0
+        Max_count_consonent=0
+        unique_letters = "".join(set(s))
+        for i in unique_letters:
+            count_of_letter = s.count(i)
+            if i in "aeiou":
+                if Max_count_vowels<count_of_letter:
+                    Max_count_vowels=count_of_letter
+            else:
+                if Max_count_consonent<count_of_letter:
+                    Max_count_consonent=count_of_letter
+        
+        return Max_count_vowels+Max_count_consonent
+
+
+        
