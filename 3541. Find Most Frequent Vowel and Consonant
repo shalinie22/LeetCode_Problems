@@ -30,4 +30,19 @@ class Solution:
         return Max_count_vowels+Max_count_consonent
 
 
+
+
+
+######Alternate Solution
+s = "successes"
+Max_count_vowels=0
+Max_count_consonent=0
+
+for i in set(s):
+    if i in "aeiou":
+        Max_count_vowels = max(Max_count_vowels, s.count(i))
+    else:
+        Max_count_consonent = max(Max_count_consonent, s.count(i))
+print(Max_count_vowels+Max_count_consonent)
+
         
