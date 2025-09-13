@@ -1,14 +1,14 @@
-Example 1:
+# Example 1:
 
-Input: s = "successes"
+# Input: s = "successes"
 
-Output: 6
+# Output: 6
 
-Explanation:
+# Explanation:
 
-The vowels are: 'u' (frequency 1), 'e' (frequency 2). The maximum frequency is 2.
-The consonants are: 's' (frequency 4), 'c' (frequency 2). The maximum frequency is 4.
-The output is 2 + 4 = 6.
+# The vowels are: 'u' (frequency 1), 'e' (frequency 2). The maximum frequency is 2.
+# The consonants are: 's' (frequency 4), 'c' (frequency 2). The maximum frequency is 4.
+# The output is 2 + 4 = 6.
 
 
 
